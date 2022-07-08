@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "地理資訊系統概論"
+  author: "Cheng-Tao Lin"
+  date: "2022-07-09"
+  sidebar:
+    style: docked
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - crs.qmd
+    - useQGIS.qmd
+    - vector.qmd
+    - raster.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: litera
+  pdf:
+    documentclass: scrreprt
+
+
+
