@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "地理資訊系統概論",
+    "section": "",
+    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "crs.html",
+    "href": "crs.html",
+    "title": "2  座標系統",
+    "section": "",
+    "text": "座標系統"
+  },
+  {
+    "objectID": "useQGIS.html#qgis-介面介紹",
+    "href": "useQGIS.html#qgis-介面介紹",
+    "title": "3  使用 QGIS 的基礎",
+    "section": "3.2 QGIS 介面介紹",
+    "text": "3.2 QGIS 介面介紹"
+  },
+  {
+    "objectID": "vector.html",
+    "href": "vector.html",
+    "title": "4  向量",
+    "section": "",
+    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "raster.html",
+    "href": "raster.html",
+    "title": "5  raster",
+    "section": "",
+    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "6  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
