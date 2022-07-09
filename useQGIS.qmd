@@ -4,3 +4,25 @@
 
 
 ## QGIS 介面介紹
+
+QGIS 的預設介面可以分為四個部分：工具列(toolbars，下圖1 中的1)、繪圖區(canvas，即圖1中的2)、
+面板(panels，圖1中的3、4和5)與狀態列(圖1中的6)。QGIS 使用 [Qt](https://qt.io) 的圖形介面框架，
+因此能夠將工具列和繪圖區任意移動排列，甚至變成浮動的子視窗。要開啟自定介面，包括啟用或關閉工具列、
+面板等，只要在工具列上任一位置按滑鼠右鍵就能開啟設定選單(圖2)。在選單中勾選要啟用或關閉的工具列或面板即可。
+另外一個方式就是在選單中的檢視(view)點選工具列(toolbars)或面板(panels)中的選項。
+
+![Fig. 1 QGIS 介面](images/QGIS_interface.png)
+圖1 QGIS 介面
+
+![Fig. 2 QGIS 開啟介面選項](images/QGIS_custom_interface.png)
+圖2 QGIS 開啟介面的選單
+
+![Fig. 3 QGIS 選單中的檢視選項](images/QGIS_interface_view.png)
+圖3 從檢視選單中的工具列選項
+
+### 工具列(toolbars)
+
+
+
+
+### 面板(panels)

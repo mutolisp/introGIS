@@ -6,6 +6,11 @@ book:
   title: "地理資訊系統概論"
   author: "Cheng-Tao Lin"
   date: "2022-07-09"
+  number-depth: 2
+  repo-url: https://github.com/mutolisp/introGIS
+  repo-actions: [edit, issue, source]
+  downloads: [pdf, epub, docx]
+  sharing: [facebook, twitter]
   sidebar:
     style: docked
   chapters:
@@ -15,6 +20,7 @@ book:
     - useQGIS.qmd
     - vector.qmd
     - raster.qmd
+    - webResources.qmd
     - summary.qmd
     - references.qmd
 
@@ -22,7 +28,7 @@ bibliography: references.bib
 
 format:
   html:
-    theme: litera
+    theme: lumen
   pdf:
     documentclass: scrreprt
 

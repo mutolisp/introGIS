@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>地理資訊系統概論 - 3&nbsp; 使用 QGIS 的基礎</title>
+<title>地理資訊系統概論 - 6&nbsp; 網路上的圖層資源</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,8 +25,8 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./vector.html" rel="next">
-<link href="./crs.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./raster.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,7 +65,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">使用 QGIS 的基礎</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -144,7 +144,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./useQGIS.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">使用 QGIS 的基礎</span></a>
+  <a href="./useQGIS.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">使用 QGIS 的基礎</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -159,7 +159,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webResources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></a>
+  <a href="./webResources.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,25 +177,14 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#安裝-qgis" id="toc-安裝-qgis" class="nav-link active" data-scroll-target="#安裝-qgis"> <span class="header-section-number">3.1</span> 安裝 QGIS</a></li>
-  <li><a href="#qgis-介面介紹" id="toc-qgis-介面介紹" class="nav-link" data-scroll-target="#qgis-介面介紹"> <span class="header-section-number">3.2</span> QGIS 介面介紹</a>
-  <ul class="collapse">
-  <li><a href="#工具列toolbars" id="toc-工具列toolbars" class="nav-link" data-scroll-target="#工具列toolbars"> <span class="header-section-number">3.2.1</span> 工具列(toolbars)</a></li>
-  <li><a href="#面板panels" id="toc-面板panels" class="nav-link" data-scroll-target="#面板panels"> <span class="header-section-number">3.2.2</span> 面板(panels)</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mutolisp/introGIS/edit/main/useQGIS.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mutolisp/introGIS/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/mutolisp/introGIS/blob/main/useQGIS.qmd" class="toc-action">View source</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">使用 QGIS 的基礎</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></h1>
 </div>
 
 
@@ -209,24 +198,8 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<section id="安裝-qgis" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="安裝-qgis"><span class="header-section-number">3.1</span> 安裝 QGIS</h2>
-</section>
-<section id="qgis-介面介紹" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="qgis-介面介紹"><span class="header-section-number">3.2</span> QGIS 介面介紹</h2>
-<p>QGIS 的預設介面可以分為四個部分：工具列(toolbars，下圖1 中的1)、繪圖區(canvas，即圖1中的2)、 面板(panels，圖1中的3、4和5)與狀態列(圖1中的6)。QGIS 使用 <a href="https://qt.io">Qt</a> 的圖形介面框架， 因此能夠將工具列和繪圖區任意移動排列，甚至變成浮動的子視窗。要開啟自定介面，包括啟用或關閉工具列、 面板等，只要在工具列上任一位置按滑鼠右鍵就能開啟設定選單(圖2)。在選單中勾選要啟用或關閉的工具列或面板即可。 另外一個方式就是在選單中的檢視(view)點選工具列(toolbars)或面板(panels)中的選項。</p>
-<p><img src="images/QGIS_interface.png" class="img-fluid" alt="Fig. 1 QGIS 介面"> 圖1 QGIS 介面</p>
-<p><img src="images/QGIS_custom_interface.png" class="img-fluid" alt="Fig. 2 QGIS 開啟介面選項"> 圖2 QGIS 開啟介面的選單</p>
-<p><img src="images/QGIS_interface_view.png" class="img-fluid" alt="Fig. 3 QGIS 選單中的檢視選項"> 圖3 從檢視選單中的工具列選項</p>
-<section id="工具列toolbars" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="工具列toolbars"><span class="header-section-number">3.2.1</span> 工具列(toolbars)</h3>
-</section>
-<section id="面板panels" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="面板panels"><span class="header-section-number">3.2.2</span> 面板(panels)</h3>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -310,13 +283,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./crs.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">座標系統</span></span>
+      <a href="./raster.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">raster</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./vector.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">向量</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
