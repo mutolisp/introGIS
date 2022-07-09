@@ -1,5 +1,8 @@
-# Preface {.unnumbered}
+# 前言 {.unnumbered}
 
-This is a Quarto book.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+本書是配合國立嘉義大學生物資源學系「地理資訊系統概論」而撰寫，
+書中主要是介紹地理資訊系統的原理、不同空間模型的介紹、座標系統、
+網路資源與相關應用，特別是生態與生物多樣性研究教學上的應用。
+課程會使用[自由軟體(free software)](https://zh.wikipedia.org/zh-tw/自由軟體)，
+也是開放源碼的 [QGIS](https://qgis.org) 來做為
+實作上的軟體。

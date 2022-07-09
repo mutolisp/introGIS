@@ -1,28 +1,145 @@
-# 使用 QGIS 的基礎
+---
+tag: QGIS, ui, toolbars
+number-sections: true
+toc: true
+
+---
+# 介面與使用基礎 {#sec-qgis_basics}
 
 ## 安裝 QGIS
 
+### 下載 QGIS
 
-## QGIS 介面介紹
+請至 QGIS [官方網頁](https://qgis.org)[下載](https://qgis.org/zh-Hant/site/forusers/download.html)。
+網站會自動偵測你的作業系統，並提供下載的連結(@fig-3-1)
 
-QGIS 的預設介面可以分為四個部分：工具列(toolbars，下圖1 中的1)、繪圖區(canvas，即圖1中的2)、
-面板(panels，圖1中的3、4和5)與狀態列(圖1中的6)。QGIS 使用 [Qt](https://qt.io) 的圖形介面框架，
+![QGIS 下載頁面](images/QGIS_download_page.png){#fig-3-1}
+
+
+以 Windows 作業系統為例，當點選「立即下載」後，下載頁面會轉到 windows 專屬的下載頁面(@fig-3-2)。
+預設有三個下載的版本，第一個 OSGeo4W Network Installer 是網頁下載的安裝程式，
+這個程式檔案比較小，但會透過網路下載相關的必要元件來安裝。如果你有特別的安裝需求，
+像是需要安裝或不安裝特定的選項，可以使用這個網路安裝程式。另外下方的 
+Standalone installers (獨立安裝套件)比較適合新手來使用，可以選擇最新版本，
+以 @fig-3-2 為例，即 3.26 版，或是另外一個比較舊的長期維護釋出版
+(long-term release) 3.22 版來安裝。
+
+![QGIS Windows 下載頁面](images/QGIS_download_windows.png){#fig-3-2}
+
+::: {.callout-note}
+
+如果沒有特別需求的話，可以直接下載穩定版安裝即可。
+
+:::
+
+
+## QGIS 圖形介面介紹
+
+QGIS 的預設介面可以分為四個部分：工具列(toolbars，@fig-3-3 中的1)、繪圖區(canvas，即 @fig-3-3 中的2)、
+面板(panels，@fig-3-3 1中的3、4和5)與狀態列(圖1中的6)。QGIS 使用 [Qt](https://qt.io) 的圖形介面框架，
 因此能夠將工具列和繪圖區任意移動排列，甚至變成浮動的子視窗。要開啟自定介面，包括啟用或關閉工具列、
-面板等，只要在工具列上任一位置按滑鼠右鍵就能開啟設定選單(圖2)。在選單中勾選要啟用或關閉的工具列或面板即可。
+面板等，只要在工具列上任一位置按滑鼠右鍵就能開啟設定選單(@fig-3-4)。在選單中勾選要啟用或關閉的工具列或面板即可。
 另外一個方式就是在選單中的檢視(view)點選工具列(toolbars)或面板(panels)中的選項。
 
-![Fig. 1 QGIS 介面](images/QGIS_interface.png)
-圖1 QGIS 介面
+![QGIS 圖形介面概覽](images/QGIS_interface.png){#fig-3-3}
 
-![Fig. 2 QGIS 開啟介面選項](images/QGIS_custom_interface.png)
-圖2 QGIS 開啟介面的選單
+![QGIS 開啟介面選項](images/QGIS_custom_interface.png){#fig-3-4}
 
-![Fig. 3 QGIS 選單中的檢視選項](images/QGIS_interface_view.png)
-圖3 從檢視選單中的工具列選項
+![QGIS 選單中的檢視選項](images/QGIS_interface_view.png){#fig-3-5}
 
 ### 工具列(toolbars)
 
+在 QGIS 中的工具列如 @fig-3-6 所顯示。在最左方(水平排列下)或最上方(垂直排列下)會有個兩排的點，
+我們可以稱為移動工作移動工具列的「把手」，你可以用滑鼠左鍵點這個部分拖曳到你想要的地方(
+可參考 @fig-3-7 [動畫關係所以 pdf 格式不支援])。
+另外若每個工具列圖示(icon)右方有個向下的箭頭，代表這個功能圖示有子項目，
+點選箭頭後會將子項目選單開啟，此時就能直接選取子項目之功能圖示。
+因工具列可能因為載入圖示項目較多而自動隱藏，若有自動隱藏的工具列功能圖示時，
+在該工具列的右方會有「》」的圖示，按該圖示後就會把隱藏的功能圖示都顯示出來。
 
+![QGIS 工具列功能概覽](images/QGIS_toolbar_0_overview.png){#fig-3-6}
 
+::: {.content-hidden when-format="pdf"}
+
+![QGIS 移動工具列位置](images/QGIS_move_toolbar.gif){#fig-3-7}
+
+:::
+
+QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功能，對於新手來說可能會難以切入，
+因此我們把工具列整理於 @tbl-qgis_toolbars 中，並在後方詳細說明不同工具列所提供的功能
+和簡單範例。
+
+| 工具列名稱                      | 應用類型 | 功能                               | 節                              |
+| ------------------------------- | ---------| ---------------------------------- | ------------------------------  |
+| 專案(projects)                  | 整合     | 使用專案檔、地圖輸出管理、樣式管理 | [-@sec-project_toolbar]         |
+| 地圖導覽(map navigation)        | 整合     | 繪圖區地圖縮放等導覽功能           | [-@sec-map_navigation_toolbar]  |
+| 選擇(selection)                 | 向量     | 選擇向量圖徵(feature)工具列        | [-@sec-selection_toolbar]       |
+| 資料來源管理(data source manager) | 整合   | 載入不同的 GIS 檔案                | [-@sec-data_source_toolbar]     |
+| 管理圖層(manage map layer)      | 整合     | 管理地圖的圖層功能                 | [-@sec-manage_maplayer_toolbar] |
+| 數位化(digitizing)              | 向量     | 數位化向量圖層功能                 | [-@sec-digitizing_toolbar]      |
+| 進階數位化(advanced digitizing) | 向量     | 進階數位化向量圖層功能             | [-@sec-adv_digitizing_toolbar]  |
+| 幾何形狀數位化(shape digitizing)| 向量     | 幾何形狀(圓形、矩形等)之數位化     | [-@sec-shape_digitizing_toolbar] |
+| 資料庫(database)                | 向量     | 資料庫載入與管理功能               | [-@sec-database_toolbar]        |
+| 屬性資料表(attributes)          | 向量     | 向量模型之屬性資料功能             | [-@sec-attribute_toolbar]       |
+| 標籤(label)                     | 向量     | 顯示與管理向量標籤                 | [-@sec-label_toolbar]           |
+| 註記圖層(annotation)            | 整合     | 顯示圖層相關註記                   | [-@sec-annotation_toolbar]      |
+| 接合(snapping)                  | 向量     | 接合的選項工具設定                 | [-@sec-snapping_toolbar]        |
+| 說明(help)                      | 整合     | 顯示說明文件(開啟瀏覽器閱覽)       | [-@sec-help_toolbar]            |
+
+: QGIS 工具列與其功能說明 {#tbl-qgis_toolbars}
+
+#### 專案工具列(projects) {#sec-project_toolbar}
+
+![專案工具列](images/QGIS_toolbar_1_projects.png){#fig-3-8}
+
+#### 地圖導覽工具列(map navigation){#sec-map_navigation_toolbar}
+
+![地圖導覽工具列](images/QGIS_toolbar_2_map_navigation.png){#fig-3-9}
+
+#### 選擇工具列(selection){#sec-selection_toolbar}
+
+ ![選擇工具列](images/QGIS_toolbar_3_selection.png){#fig-3-10}
+
+#### 資料來源管理工具列(data source manager){#sec-data_source_toolbar}
+
+ ![資料來源管理工具列](images/QGIS_toolbar_4_data_source_manager.png){#fig-3-11}
+
+#### 圖層管理工具列(manage map layer){#sec-manage_maplayer_toolbar}
+
+ ![圖層管理工具列](images/QGIS_toolbar_5_manage_map_layer.png){#fig-3-12}
+
+#### 數位化工具列(digitizing){#sec-digitizing_toolbar}
+
+![數位化工具列](images/QGIS_toolbar_6_digitizing.png){#fig-3-13}
+
+#### 進階數位化工具列(advanced digitizing){#sec-adv_digitizing_toolbar}
+
+![進階數位化工具列](images/QGIS_toolbar_7_advanced_digitizing.png){#fig-3-14}
+
+#### 幾何形狀數位化工具列(shape digitizing){#sec-shape_digitizing_toolbar}
+
+![幾何形狀數位化工具列](images/QGIS_toolbar_8_shape_digitizing.png){#fig-3-15}
+
+這個工具列能夠直接繪製圓形、矩形、多邊形等。
+
+#### 資料庫(database){#sec-database_toolbar}
+
+![資料庫](images/QGIS_toolbar_9_database.png){#fig-3-16}
+
+#### 屬性資料表(attribute table)工具列{#sec-attribute_toolbar}
+
+![屬性資料表](images/QGIS_toolbar_10_attribute.png){#fig-3-17}
+
+#### 標籤(label)工具列{#sec-label_toolbar}
+
+![標籤工具列](images/QGIS_toolbar_11_label.png){#fig-3-18}
+
+#### 註記(annotation)工具列{#sec-annotation_toolbar}
+
+![註記工具列](images/QGIS_toolbar_12_annotation.png){#fig-3-19}
+
+#### 接合(snapping)工具列{#sec-snapping_toolbar}
+
+![接合工具列](images/QGIS_toolbar_13_snapping.png){#fig-3-20}
 
 ### 面板(panels)
