@@ -5,7 +5,10 @@ project:
 book:
   title: "地理資訊系統概論"
   author: "Cheng-Tao Lin"
+  cover-image: images/bookcover.png
   date: "2022-07-09"
+  favicon: images/gisfavicon.png
+  page-navigation: true
   language: zh
   number-depth: 2
   repo-url: https://github.com/mutolisp/introGIS

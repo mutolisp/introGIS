@@ -27,6 +27,7 @@ ul.task-list{list-style: none;}
 <meta name="quarto:offset" content="./">
 <link href="./QGIS_projects.html" rel="next">
 <link href="./introQGIS.html" rel="prev">
+<link href="./images/gisfavicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -303,7 +304,7 @@ Note
 </figure>
 </div>
 </div>
-<p>QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功能，對於新手來說可能會難以切入， 因此我們把工具列整理於 <a href="#tbl-qgis_toolbars">Table&nbsp;<span>3.1</span></a> 中，並在後方詳細說明不同工具列所提供的功能 和簡單範例。</p>
+<p>QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功能，對於新手來說可能會難以切入， 因此我們把工具列整理於 <a href="#tbl-qgis_toolbars">Table&nbsp;<span>3.1</span></a> 中，並在後方詳細說明不同工具列所提供的功能和簡單範例。 如果不清楚圖示的功能是什麼，可以將滑鼠停留在圖示上方稍待半秒左右，QGIS 就會自動出現該圖示的功能說明和快速鍵。</p>
 <div id="tbl-qgis_toolbars" class="anchored">
 <table class="table">
 <caption>Table 3.1: QGIS 工具列與其功能說明</caption>
@@ -411,12 +412,21 @@ Note
 </div>
 <section id="sec-project_toolbar" class="level4" data-number="3.2.1.1">
 <h4 data-number="3.2.1.1" class="anchored" data-anchor-id="sec-project_toolbar"><span class="header-section-number">3.2.1.1</span> 專案工具列(projects)</h4>
+<p>專案工具列如圖 <a href="#fig-3-8">Figure&nbsp;<span>3.8</span></a> 所顯示，具有六個主要功能， 和建立與管理專案有關。詳細的說明請參見 <a href="QGIS_projects.html"><span>Chapter&nbsp;4</span></a> 章節。 以下將簡要介紹專案工具列的元件說明，請同時參考 <a href="#fig-3-8">Figure&nbsp;<span>3.8</span></a> 的編號來閱讀。</p>
 <div id="fig-3-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_1_projects.png" class="img-fluid figure-img"></p>
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.8: 專案工具列</figcaption><p></p>
 </figure>
 </div>
+<ul>
+<li>P1: 建立新專案(快速鍵 Ctrl + N 或 Command + N [mac])，建立新的 QGIS 專案</li>
+<li>P2: 開啟專案(快速鍵 Ctrl + O 或 Command + O [mac])，開啟 QGIS 專案檔</li>
+<li>P3: 儲存專案(快速鍵 Ctrl + S 或 Command + S [mac])，儲存 QGIS 專案檔</li>
+<li>P4: 新建列印版面配置，建立列印出圖的版面配置</li>
+<li>P5: 顯示版面配置管理，顯示版面配置的管理視窗</li>
+<li>P6: 管理樣式，主要是管理顯示向量圖徵之樣式，包含顏色、符號等</li>
+</ul>
 </section>
 <section id="sec-map_navigation_toolbar" class="level4" data-number="3.2.1.2">
 <h4 data-number="3.2.1.2" class="anchored" data-anchor-id="sec-map_navigation_toolbar"><span class="header-section-number">3.2.1.2</span> 地圖導覽工具列(map navigation)</h4>
@@ -426,6 +436,24 @@ Note
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.9: 地圖導覽工具列</figcaption><p></p>
 </figure>
 </div>
+<ul>
+<li>N1: 移動地圖位置(pan map)</li>
+<li>N2: 移動地圖位置到所選擇的圖徵中，會將所選的圖徵置放到繪圖區的正中央</li>
+<li>N3: 地圖放大(zoom out)</li>
+<li>N4: 地圖縮小(zoom out)</li>
+<li>N5: 縮放至全覽圖(zoom full)，縮放到所有可見圖層的範圍</li>
+<li>N6: 移動並放大所選擇的圖徵並置放在繪圖區正中央，和 N2 不同的是此功能會放大地圖</li>
+<li>N7: 縮放至該圖層的範圍(extent)</li>
+<li>N8: 縮放地圖至 1:1 的大小</li>
+<li>N9: 縮放至上次可見的範圍</li>
+<li>N10: 縮放至下一個可見之範圍</li>
+<li>N11: 新開啟一個 2D 的地圖檢視(map view)，也就是會開啟一個浮動的子視窗顯示繪圖區(canvas)</li>
+<li>N12: 新開啟一個 3D 的地圖檢視</li>
+<li>N13: 新建立一個地圖檢視書籤，可以在書籤檢視中快速跳至該地圖檢視範圍(N14)</li>
+<li>N14: 顯示地圖檢視書籤</li>
+<li>N15: 時間管理工具，若圖層有時間的屬性，可設定並顯示連續的動畫</li>
+<li>N16: 重新整理繪圖區</li>
+</ul>
 </section>
 <section id="sec-selection_toolbar" class="level4" data-number="3.2.1.3">
 <h4 data-number="3.2.1.3" class="anchored" data-anchor-id="sec-selection_toolbar"><span class="header-section-number">3.2.1.3</span> 選擇工具列(selection)</h4>
