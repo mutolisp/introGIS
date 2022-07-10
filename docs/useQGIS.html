@@ -163,29 +163,34 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./QGIS_export_map.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">出圖</span></a>
+  <a href="./vector_selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">向量的選擇與查詢</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./QGIS_export_map.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">出圖</span></a>
   </div>
 </li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vector.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">向量</span></a>
+  <a href="./vector.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">向量</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./raster.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">raster</span></a>
+  <a href="./raster.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">raster</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webResources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></a>
+  <a href="./webResources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -463,6 +468,24 @@ Note
 <p></p><figcaption aria-hidden="true" class="figure-caption">Figure 3.10: 選擇工具列</figcaption><p></p>
 </figure>
 </div>
+<ul>
+<li>S1: 選擇圖徵(select features)，可以用下列不同方式選擇
+<ul>
+<li>點選(select features)</li>
+<li>繪製多邊形來選擇範圍內的圖徵(select features by polygon)</li>
+<li>自由繪製範圍來選擇圖徵(select features by freehand)</li>
+<li>設定半徑來選擇圖徵(select features by radius)</li>
+</ul></li>
+<li>S2: 選擇方式，有以下幾種
+<ul>
+<li>由數值來選擇(select features by value)，可依照特定欄位的值，例如選擇縣市名稱</li>
+<li>由表示式來選擇(select features by expression)</li>
+<li>選擇所有圖徵(select all features)</li>
+<li>反向選擇(invert feature selection)</li>
+</ul></li>
+<li>S3: 取消選擇，底下有兩個子選項：取消所有圖層中的選擇、只取消選取的圖層</li>
+<li>S4: 由地點來選擇(select by location)，可從其他圖層和目標圖層的空間關係來選取。 詳細步驟請參見 <a href="vector_selection.html"><span>Chapter&nbsp;5</span></a></li>
+</ul>
 </section>
 <section id="sec-data_source_toolbar" class="level4" data-number="3.2.1.4">
 <h4 data-number="3.2.1.4" class="anchored" data-anchor-id="sec-data_source_toolbar"><span class="header-section-number">3.2.1.4</span> 資料來源管理工具列(data source manager)</h4>

@@ -1,0 +1,51 @@
+---
+tag: QGIS, vector, selection, query
+number-sections: true
+toc: true
+---
+
+# 向量的選擇與查詢 {#sec-vector_selection}
+
+
+我們使用政府開放資料網的「[鄉鎮市區界](https://data.gov.tw/dataset/7441)」
+作為範例。本書將鄉鎮市區界的檔案轉成 geopackage 並放在範例檔案區(examples/layers/鄉鎮市界_內政部20210415.gpkg)
+
+## 選擇圖徵
+
+1. 載入鄉鎮市界圖層
+
+![載入範例的鄉鎮市界圖層](images/vector_load_layers.png){#fig-6-1}
+
+2. 使用選擇工具來選擇圖徵
+
+請點選擇工具列上的選擇圖徵![選擇工具列](images/select_features_icon.png){#fig-6-2}
+(即 @fig-6-3 的 1)，點選之後在繪圖區中設定要選的矩形範圍即可選取其範圍內圖徵。
+
+![選擇圖徵](images/select_feature.png){#fig-6-3}
+
+選擇完之後，已選的圖徵會呈現螢光黃色，如 @fig-6-4
+
+![已選擇後的結果](images/selected_features.png){#fig-6-4}
+
+另外也能夠用另外三種選擇方式，即「繪製多邊形範圍選擇(select features by polygon)」、
+「自由繪製範圍來選擇圖徵(select features by freehand)」與「設定半徑來選擇圖徵(select features by radius)」。
+繪製多邊形範圍時，在工具列上選擇工具圖示後，點選多邊形範圍，最後一個點完成後按滑鼠右鍵即完成，請參見 @fig-6-5。
+
+::: {.content-hidden when-format="pdf"}
+![繪製多邊形範圍來選擇](images/select_by_polygon.gif){#fig-6-5}
+:::
+
+::: {.content-hidden when-format="pdf"}
+![自由繪製範圍來選擇](images/select_by_freehand.gif){#fig-6-6}
+:::
+
+::: {.content-hidden when-format="pdf"}
+![設定半徑範圍來選擇圖徵](images/select_by_radius.gif){#fig-6-6}
+:::
+
+::: {.content-hidden when-format="html" when-format="epub"}
+![QGIS 移動工具列位置](images/QGIS_move_toolbar.png){#fig-3-7}
+:::
+
+
+3. 

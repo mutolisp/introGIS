@@ -128,10 +128,24 @@ QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功
 - N15: 時間管理工具，若圖層有時間的屬性，可設定並顯示連續的動畫
 - N16: 重新整理繪圖區
 
-
 #### 選擇工具列(selection){#sec-selection_toolbar}
 
- ![選擇工具列](images/QGIS_toolbar_3_selection.png){#fig-3-10}
+![選擇工具列](images/QGIS_toolbar_3_selection.png){#fig-3-10}
+
+- S1: 選擇圖徵(select features)，可以用下列不同方式選擇
+    - 點選(select features)
+    - 繪製多邊形來選擇範圍內的圖徵(select features by polygon)
+    - 自由繪製範圍來選擇圖徵(select features by freehand)
+    - 設定半徑來選擇圖徵(select features by radius)
+- S2: 選擇方式，有以下幾種
+    - 由數值來選擇(select features by value)，可依照特定欄位的值，例如選擇縣市名稱
+    - 由表示式來選擇(select features by expression)
+    - 選擇所有圖徵(select all features)
+    - 反向選擇(invert feature selection)
+- S3: 取消選擇，底下有兩個子選項：取消所有圖層中的選擇、只取消選取的圖層
+- S4: 由地點來選擇(select by location)，可從其他圖層和目標圖層的空間關係來選取。
+詳細步驟請參見 @sec-vector_selection
+
 
 #### 資料來源管理工具列(data source manager){#sec-data_source_toolbar}
 
