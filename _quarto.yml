@@ -15,22 +15,25 @@ book:
   repo-actions: [edit, issue, source]
   downloads: [pdf, epub, docx]
   sharing: [facebook, twitter]
-  sidebar:
-    style: docked
 
   chapters:
     - index.qmd
     - intro.qmd
     - crs.qmd
+    - vector.qmd
+    - raster.qmd
     - part: introQGIS.qmd
       chapters:
       - useQGIS.qmd
       - QGIS_projects.qmd
+      - webResources.qmd
       - vector_selection.qmd
-      - QGIS_export_map.qmd
-    - vector.qmd
-    - raster.qmd
-    - webResources.qmd
+    - part: QGIS_export_map.qmd
+    - part: QGIS_vector_analysis.qmd
+    - part: QGIS_raster_analysis.qmd
+    - part: QGIS_image_processing.qmd
+      chapters:
+      - QGIS_georeference.qmd
     - summary.qmd
     - references.qmd
 
@@ -41,6 +44,8 @@ format:
     theme: simplex 
     code-copy: true
     fig-responsive: true
+    citations-hover: true
+    comment-hover: true
   pdf:
     header-includes:
       - \usepackage{fontspec} # 使用 fontspec package

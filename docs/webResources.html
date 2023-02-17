@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>地理資訊系統概論 - 9&nbsp; 網路上的圖層資源</title>
+<title>地理資訊系統概論 - 7&nbsp; 網路上的圖層資源</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,8 +25,8 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
-<link href="./raster.html" rel="prev">
+<link href="./vector_selection.html" rel="next">
+<link href="./QGIS_projects.html" rel="prev">
 <link href="./images/gisfavicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -60,13 +60,13 @@ ul.task-list{list-style: none;}
 
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -76,7 +76,7 @@ ul.task-list{list-style: none;}
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">地理資訊系統概論</a> 
@@ -143,6 +143,16 @@ ul.task-list{list-style: none;}
   <a href="./crs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">座標系統</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vector.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">向量</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./raster.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">raster</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
     <div class="sidebar-item-container"> 
         <a href="./introQGIS.html" class="sidebar-item-text sidebar-link">QGIS 介紹與說明</a>
@@ -153,44 +163,59 @@ ul.task-list{list-style: none;}
     <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./useQGIS.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">介面與使用基礎</span></a>
+  <a href="./useQGIS.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">介面與使用基礎</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./QGIS_projects.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">專案管理</span></a>
+  <a href="./QGIS_projects.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">專案管理</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vector_selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">向量的選擇與查詢</span></a>
+  <a href="./webResources.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./QGIS_export_map.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">出圖</span></a>
+  <a href="./vector_selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">向量的選擇與查詢</span></a>
   </div>
 </li>
     </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vector.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">向量</span></a>
+  <a href="./QGIS_export_map.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">出圖</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./raster.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">raster</span></a>
+  <a href="./QGIS_vector_analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">向量分析</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webResources.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></a>
+  <a href="./QGIS_raster_analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">QGIS_raster_analysis.html</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a href="./QGIS_image_processing.html" class="sidebar-item-text sidebar-link">影像處理</a>
+      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./QGIS_georeference.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">空間對位(Georeferencing)</span></a>
+  </div>
+</li>
+    </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -210,7 +235,7 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></h1>
 </div>
 
 
@@ -309,13 +334,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./raster.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">raster</span></span>
+      <a href="./QGIS_projects.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">專案管理</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./vector_selection.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">向量的選擇與查詢</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

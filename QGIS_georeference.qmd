@@ -1,0 +1,30 @@
+---
+tag: QGIS, georeference, howto, raster
+number-sections: true
+toc: true
+---
+# 空間對位(Georeferencing)
+
+## 學習目標與應用
+
+使用內建空間對位工具將無空間參照影像設定成有空間資訊的圖層
+
+1. 了解空間對位工具的功能
+2. 可使用空間對位工具儲存空間對位控制點
+3. 可使用空間對位工具設定不同的轉換參數
+
+## 使用的工具
+
+1. 核心工具：空間對位(georeferencer)
+2. 外掛工具：Freehand raster georeferencer [官方網站](https://plugins.qgis.org/plugins/FreehandRasterGeoreferencer/) [原始碼](https://github.com/gvellut/FreehandRasterGeoreferencer)
+
+## 空間對位方法
+
+
+
+## 案例練習
+
+![QGIS 空間對位視窗](images/QGIS_georeferencer_window.png){#QGIS_georeference_window}
+
+
+![QGIS 空間對位工具列](images/QGIS_georeferencer_toolbars.png)(#QGIS_georef_toolbars)
