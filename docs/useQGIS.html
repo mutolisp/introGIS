@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.646">
+<meta name="generator" content="quarto-1.2.313">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -36,7 +41,7 @@ ul.task-list{list-style: none;}
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -154,68 +159,62 @@ ul.task-list{list-style: none;}
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
-    <div class="sidebar-item-container"> 
-        <a href="./introQGIS.html" class="sidebar-item-text sidebar-link">QGIS 介紹與說明</a>
-      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
-        <i class="bi bi-chevron-right ms-2"></i>
-      </a>
-    </div>
-    <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-        <li class="sidebar-item">
+      <div class="sidebar-item-container"> 
+            <a href="./introQGIS.html" class="sidebar-item-text sidebar-link">QGIS 介紹與說明</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./useQGIS.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">介面與使用基礎</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./QGIS_projects.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">專案管理</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./webResources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">網路上的圖層資源</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./vector_selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">向量的選擇與查詢</span></a>
   </div>
 </li>
-    </ul>
+      </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./QGIS_export_map.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">出圖</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./QGIS_vector_analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">向量分析</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./QGIS_raster_analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">QGIS_raster_analysis.html</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
-    <div class="sidebar-item-container"> 
-        <a href="./QGIS_image_processing.html" class="sidebar-item-text sidebar-link">影像處理</a>
-      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
-        <i class="bi bi-chevron-right ms-2"></i>
-      </a>
-    </div>
-    <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-        <li class="sidebar-item">
+      <span class="sidebar-item-text sidebar-link text-start">出圖</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">向量分析</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">QGIS_raster_analysis.html</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./QGIS_image_processing.html" class="sidebar-item-text sidebar-link">影像處理</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./QGIS_georeference.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">空間對位(Georeferencing)</span></a>
+  <a href="./QGIS_georeference.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">空間對位(Georeferencing)</span></a>
   </div>
 </li>
-    </ul>
+      </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -228,18 +227,19 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#安裝-qgis" id="toc-安裝-qgis" class="nav-link active" data-scroll-target="#安裝-qgis"> <span class="header-section-number">5.1</span> 安裝 QGIS</a>
+  <li><a href="#安裝-qgis" id="toc-安裝-qgis" class="nav-link active" data-scroll-target="#安裝-qgis"><span class="toc-section-number">5.1</span>  安裝 QGIS</a>
   <ul class="collapse">
-  <li><a href="#下載-qgis" id="toc-下載-qgis" class="nav-link" data-scroll-target="#下載-qgis"> <span class="header-section-number">5.1.1</span> 下載 QGIS</a></li>
+  <li><a href="#下載-qgis" id="toc-下載-qgis" class="nav-link" data-scroll-target="#下載-qgis"><span class="toc-section-number">5.1.1</span>  下載 QGIS</a></li>
   </ul></li>
-  <li><a href="#qgis-圖形介面介紹" id="toc-qgis-圖形介面介紹" class="nav-link" data-scroll-target="#qgis-圖形介面介紹"> <span class="header-section-number">5.2</span> QGIS 圖形介面介紹</a>
+  <li><a href="#qgis-圖形介面介紹" id="toc-qgis-圖形介面介紹" class="nav-link" data-scroll-target="#qgis-圖形介面介紹"><span class="toc-section-number">5.2</span>  QGIS 圖形介面介紹</a>
   <ul class="collapse">
-  <li><a href="#工具列toolbars" id="toc-工具列toolbars" class="nav-link" data-scroll-target="#工具列toolbars"> <span class="header-section-number">5.2.1</span> 工具列(toolbars)</a></li>
-  <li><a href="#面板panels" id="toc-面板panels" class="nav-link" data-scroll-target="#面板panels"> <span class="header-section-number">5.2.2</span> 面板(panels)</a></li>
+  <li><a href="#工具列toolbars" id="toc-工具列toolbars" class="nav-link" data-scroll-target="#工具列toolbars"><span class="toc-section-number">5.2.1</span>  工具列(toolbars)</a></li>
+  <li><a href="#面板panels" id="toc-面板panels" class="nav-link" data-scroll-target="#面板panels"><span class="toc-section-number">5.2.2</span>  面板(panels)</a></li>
+  <li><a href="#狀態列" id="toc-狀態列" class="nav-link" data-scroll-target="#狀態列"><span class="toc-section-number">5.2.3</span>  狀態列</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mutolisp/introGIS/edit/main/useQGIS.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mutolisp/introGIS/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/mutolisp/introGIS/blob/main/useQGIS.qmd" class="toc-action">View source</a></p></div></div></nav>
@@ -257,6 +257,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -271,14 +272,14 @@ ul.task-list{list-style: none;}
 <div id="fig-3-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_download_page.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.1: QGIS 下載頁面</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.1: QGIS 下載頁面</figcaption><p></p>
 </figure>
 </div>
-<p>以 Windows 作業系統為例，當點選「立即下載」後，下載頁面會轉到 windows 專屬的下載頁面(<a href="#fig-3-2">Figure&nbsp;<span>5.2</span></a>)。 預設有三個下載的版本，第一個 OSGeo4W Network Installer 是網頁下載的安裝程式， 這個程式檔案比較小，但會透過網路下載相關的必要元件來安裝。如果你有特別的安裝需求， 像是需要安裝或不安裝特定的選項，可以使用這個網路安裝程式。另外下方的 Standalone installers (獨立安裝套件)比較適合新手來使用，可以選擇最新版本， 以 <a href="#fig-3-2">Figure&nbsp;<span>5.2</span></a> 為例，即 3.26 版，或是另外一個比較舊的長期維護釋出版 (long-term release) 3.22 版來安裝。</p>
+<p>以 Windows 作業系統為例，當點選「立即下載」後，下載頁面會轉到 windows 專屬的下載頁面(<a href="#fig-3-2">Figure&nbsp;<span>5.2</span></a>)。 預設會下載獨立安裝的套件(standalone)，對於新手而言可以選這個最新的版本。 以 <a href="#fig-3-2">Figure&nbsp;<span>5.2</span></a> 為例，即 3.28 版，或是另外一個比較舊的長期維護釋出版(Long-Term Release, LTR)， 目前是 3.22-LTR。如果你有特別的安裝需求，像是需要安裝或不安裝特定的選項， 可以使用 OSGeo4W Network Installer 來透過網頁下載並安裝。</p>
 <div id="fig-3-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_download_windows.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.2: QGIS Windows 下載頁面</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.2: QGIS Windows 下載頁面</figcaption><p></p>
 </figure>
 </div>
 <div class="callout-note callout callout-style-default callout-captioned">
@@ -291,7 +292,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>如果沒有特別需求的話，可以直接下載穩定版安裝即可。</p>
+<p>如果沒有特別需求的話，可以直接下載穩定版(3.28)安裝即可。</p>
 </div>
 </div>
 </section>
@@ -302,19 +303,19 @@ Note
 <div id="fig-3-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_interface.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.3: QGIS 圖形介面概覽</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.3: QGIS 圖形介面概覽</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-3-4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_custom_interface.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.4: QGIS 開啟介面選項</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.4: QGIS 開啟介面選項</figcaption><p></p>
 </figure>
 </div>
 <div id="fig-3-5" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_interface_view.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.5: QGIS 選單中的檢視選項</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.5: QGIS 選單中的檢視選項</figcaption><p></p>
 </figure>
 </div>
 <section id="工具列toolbars" class="level3" data-number="5.2.1">
@@ -323,21 +324,21 @@ Note
 <div id="fig-3-6" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_0_overview.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.6: QGIS 工具列功能概覽</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.6: QGIS 工具列功能概覽</figcaption><p></p>
 </figure>
 </div>
 <div>
 <div id="fig-3-7" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_move_toolbar.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.7: QGIS 移動工具列位置</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.7: QGIS 移動工具列位置</figcaption><p></p>
 </figure>
 </div>
 </div>
 <p>QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功能，對於新手來說可能會難以切入， 因此我們把工具列整理於 <a href="#tbl-qgis_toolbars">Table&nbsp;<span>5.1</span></a> 中，並在後方詳細說明不同工具列所提供的功能和簡單範例。 如果不清楚圖示的功能是什麼，可以將滑鼠停留在圖示上方稍待半秒左右，QGIS 就會自動出現該圖示的功能說明和快速鍵。</p>
 <div id="tbl-qgis_toolbars" class="anchored">
 <table class="table">
-<caption>Table 5.1: QGIS 工具列與其功能說明</caption>
+<caption>Table&nbsp;5.1: QGIS 工具列與其功能說明</caption>
 <colgroup>
 <col style="width: 29%">
 <col style="width: 8%">
@@ -446,7 +447,7 @@ Note
 <div id="fig-3-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_1_projects.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.8: 專案工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.8: 專案工具列</figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -463,7 +464,7 @@ Note
 <div id="fig-3-9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_2_map_navigation.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.9: 地圖導覽工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.9: 地圖導覽工具列</figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -490,7 +491,7 @@ Note
 <div id="fig-3-10" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_3_selection.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.10: 選擇工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.10: 選擇工具列</figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -517,7 +518,7 @@ Note
 <div id="fig-3-11" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_4_data_source_manager.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.11: 資料來源管理工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.11: 資料來源管理工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -526,7 +527,7 @@ Note
 <div id="fig-3-12" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_5_manage_map_layer.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.12: 圖層管理工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.12: 圖層管理工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -535,7 +536,7 @@ Note
 <div id="fig-3-13" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_6_digitizing.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.13: 數位化工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.13: 數位化工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -544,7 +545,7 @@ Note
 <div id="fig-3-14" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_7_advanced_digitizing.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.14: 進階數位化工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.14: 進階數位化工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -553,7 +554,7 @@ Note
 <div id="fig-3-15" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_8_shape_digitizing.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.15: 幾何形狀數位化工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.15: 幾何形狀數位化工具列</figcaption><p></p>
 </figure>
 </div>
 <p>這個工具列能夠直接繪製圓形、矩形、多邊形等。</p>
@@ -563,7 +564,7 @@ Note
 <div id="fig-3-16" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_9_database.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.16: 資料庫</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.16: 資料庫</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -572,7 +573,7 @@ Note
 <div id="fig-3-17" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_10_attribute.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.17: 屬性資料表</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.17: 屬性資料表</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -581,7 +582,7 @@ Note
 <div id="fig-3-18" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_11_label.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.18: 標籤工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.18: 標籤工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -590,7 +591,7 @@ Note
 <div id="fig-3-19" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_12_annotation.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.19: 註記工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.19: 註記工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -599,13 +600,56 @@ Note
 <div id="fig-3-20" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_13_snapping.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 5.20: 接合工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.20: 接合工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
 </section>
 <section id="面板panels" class="level3" data-number="5.2.2">
 <h3 data-number="5.2.2" class="anchored" data-anchor-id="面板panels"><span class="header-section-number">5.2.2</span> 面板(panels)</h3>
+<p>面板是 QGIS 的圖形化介面主要元素，通常是放在在 QGIS 視窗的左方或右方， 裡頭有方便存取的選單、工具列等元件(<a href="#fig-3-21">Figure&nbsp;<span>5.21</span></a>)。使用上可以用滑鼠拖拉的方式隨意收放在任一區域， 或是用浮動模式。若使用多個螢幕，也能把面板放在不同的螢幕上，以最大化繪圖區的視窗。</p>
+<div id="fig-3-21" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/QGIS_panel_types.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.21: 面板模式</figcaption><p></p>
+</figure>
+</div>
+<p>移動的面板的時候，可用滑鼠拖拉至目標位置，此時會出現灰色背景提示(<a href="#fig-3-22">Figure&nbsp;<span>5.22</span></a>)。 若要移動為頁籤模式，就將要移動的面板移到既有的面板上(<a href="#fig-3-23">Figure&nbsp;<span>5.24</span></a>)，此外頁籤也能夠 用滑鼠拖拉順序。</p>
+<div>
+<div id="fig-3-22" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/QGIS_move_and_dock_panel.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.22: 移動面板</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div>
+<div id="fig-3-23" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/QGIS_dock_panel_as_tab.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.23: 移動面板變成頁籤模式</figcaption><p></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="狀態列" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="狀態列"><span class="header-section-number">5.2.3</span> 狀態列</h3>
+<p>狀態列包含「快速搜尋工具」、「座標或範圍顯示區(coodinates)」、「比例尺(scale)」、 「縮放繪圖區(magnifier)」、「旋轉繪圖區(rotation)」、「座標參考系統」等(<a href="#fig-3-23">Figure&nbsp;<span>5.24</span></a>)。</p>
+<div id="fig-3-23" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/QGIS_status_bar.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.24: 狀態列</figcaption><p></p>
+</figure>
+</div>
+<p>QGIS 的功能非常多，圖形介面也很複雜，通常要執行某個特定地理演算法時，會從選單或工具列來點選。 但若您一時找不到功能在哪裡時，可直接在快速搜尋工具(windows 快速鍵 ctrl + k；mac os 快速鍵 command + k) 中直接輸入您想要找的工具名稱關鍵字即可(<a href="#fig-3-24">Figure&nbsp;<span>5.25</span></a>)。舉例來說，如果我要執行向量的環域功能(buffer)， 可在此直接輸入 buffer 或是前幾個字就可以找到。</p>
+<div>
+<div id="fig-3-24" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/QGIS_type_to_locate.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5.25: 快速搜尋工具</figcaption><p></p>
+</figure>
+</div>
+</div>
 
 
 </section>
@@ -614,6 +658,24 @@ Note
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -635,7 +697,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -663,31 +742,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

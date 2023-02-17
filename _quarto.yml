@@ -10,7 +10,7 @@ book:
   favicon: images/gisfavicon.png
   page-navigation: true
   language: zh
-  number-depth: 2
+  #number-depth: 2
   repo-url: https://github.com/mutolisp/introGIS
   repo-actions: [edit, issue, source]
   downloads: [pdf, epub, docx]

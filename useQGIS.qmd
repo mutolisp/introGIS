@@ -17,18 +17,16 @@ toc: true
 
 
 以 Windows 作業系統為例，當點選「立即下載」後，下載頁面會轉到 windows 專屬的下載頁面(@fig-3-2)。
-預設有三個下載的版本，第一個 OSGeo4W Network Installer 是網頁下載的安裝程式，
-這個程式檔案比較小，但會透過網路下載相關的必要元件來安裝。如果你有特別的安裝需求，
-像是需要安裝或不安裝特定的選項，可以使用這個網路安裝程式。另外下方的 
-Standalone installers (獨立安裝套件)比較適合新手來使用，可以選擇最新版本，
-以 @fig-3-2 為例，即 3.26 版，或是另外一個比較舊的長期維護釋出版
-(long-term release) 3.22 版來安裝。
+預設會下載獨立安裝的套件(standalone)，對於新手而言可以選這個最新的版本。
+以 @fig-3-2 為例，即 3.28 版，或是另外一個比較舊的長期維護釋出版(Long-Term Release, LTR)，
+目前是 3.22-LTR。如果你有特別的安裝需求，像是需要安裝或不安裝特定的選項，
+可以使用 OSGeo4W Network Installer 來透過網頁下載並安裝。
 
 ![QGIS Windows 下載頁面](images/QGIS_download_windows.png){#fig-3-2}
 
 ::: {.callout-note}
 
-如果沒有特別需求的話，可以直接下載穩定版安裝即可。
+如果沒有特別需求的話，可以直接下載穩定版(3.28)安裝即可。
 
 :::
 
@@ -190,3 +188,50 @@ QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功
 ![接合工具列](images/QGIS_toolbar_13_snapping.png){#fig-3-20}
 
 ### 面板(panels)
+
+面板是 QGIS 的圖形化介面主要元素，通常是放在在 QGIS 視窗的左方或右方，
+裡頭有方便存取的選單、工具列等元件(@fig-3-21)。使用上可以用滑鼠拖拉的方式隨意收放在任一區域，
+或是用浮動模式。若使用多個螢幕，也能把面板放在不同的螢幕上，以最大化繪圖區的視窗。
+
+![面板模式](images/QGIS_panel_types.png){#fig-3-21}
+
+移動的面板的時候，可用滑鼠拖拉至目標位置，此時會出現灰色背景提示(@fig-3-22)。
+若要移動為頁籤模式，就將要移動的面板移到既有的面板上(@fig-3-23)，此外頁籤也能夠
+用滑鼠拖拉順序。
+
+::: {.content-hidden when-format="pdf"}
+![移動面板](images/QGIS_move_and_dock_panel.gif){#fig-3-22}
+:::
+
+::: {.content-hidden when-format="html" when-format="epub"}
+![移動面板](images/QGIS_move_and_dock_panel.png){#fig-3-22}
+:::
+
+::: {.content-hidden when-format="pdf"}
+![移動面板變成頁籤模式](images/QGIS_dock_panel_as_tab.gif){#fig-3-23}
+:::
+
+::: {.content-hidden when-format="html" when-format="epub"}
+![移動面板變成頁籤模式](images/QGIS_dock_panel_as_tab.png){#fig-3-23}
+:::
+
+### 狀態列
+
+狀態列包含「快速搜尋工具」、「座標或範圍顯示區(coodinates)」、「比例尺(scale)」、
+「縮放繪圖區(magnifier)」、「旋轉繪圖區(rotation)」、「座標參考系統」等(@fig-3-23)。
+
+![狀態列](images/QGIS_status_bar.png){#fig-3-23}
+
+QGIS 的功能非常多，圖形介面也很複雜，通常要執行某個特定地理演算法時，會從選單或工具列來點選。
+但若您一時找不到功能在哪裡時，可直接在快速搜尋工具(windows 快速鍵 ctrl + k；mac os 快速鍵 command + k)
+中直接輸入您想要找的工具名稱關鍵字即可(@fig-3-24)。舉例來說，如果我要執行向量的環域功能(buffer)，
+可在此直接輸入 buffer 或是前幾個字就可以找到。
+
+::: {.content-hidden when-format="pdf"}
+![快速搜尋工具](images/QGIS_type_to_locate.gif){#fig-3-24}
+:::
+
+::: {.content-hidden when-format="html" when-format="epub"}
+![快速搜尋工具](images/QGIS_type_to_locate.png){#fig-3-24}
+:::
+
