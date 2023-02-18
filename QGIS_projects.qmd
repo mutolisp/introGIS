@@ -5,4 +5,35 @@ toc: true
 ---
 # 專案管理 {#sec-project-management}
 
+分析和處理空間資料時，往往都需要反覆的載入圖層、修改圖層內容與資料等，
+若每次都要重頭來開啟圖層往往曠日費時。因此可善加使用 QGIS 的專案(project)功能，
+相關工具列的功能說明可參考 @sec-project_toolbar 及 @fig-6-1。
 
+## 新建立專案 {#sec-create-project}
+
+開啟 QGIS 的時候，會是一個完全空白的專案，此時可以載入圖層或是操作。
+當要再新建立一個專案，可按工具列的「新建專案」(@fig-6-1 的 P1 )
+或是按快速鍵 Ctrl + N (windows) 或 Command + N (Mac OS)。
+
+![專案工具列](images/QGIS_toolbar_1_projects.png){#fig-6-1}
+
+
+## 儲存專案
+
+QGIS 儲存專案的時候(@fig-6-2)，可以選擇 .qgz 或是 .qgs 格式。這兩種的區別是前者為壓縮檔案，
+後者則是平面文字的 xml 格式檔案。建議可以按照預設儲存成 .qgz 。
+
+![儲存專案](images/QGIS_save_a_project.png){#fig-6-2}
+
+::: {.callout-note}
+請注意：如果要和其他人分享的話，請記得將相關圖層置放在同一個目錄內，
+整個壓縮起來分享。只傳.qgz 或.qgs 的檔案的話，其他檔案他人是無法讀到的。
+另外一個就是將檔案都封裝儲存在 geopackage 內。
+:::
+
+當圖層檔案較多且比較複雜的話，建議可以把相關的向量圖層還有專案檔都放在 geopackage 內，
+這樣可以便於後續操作。
+
+### 範例一、
+
+[專案範例 qgz 檔](examples/projects/project_template.qgz)和範例檔中的[.gpkg 檔](examples/projects/project_template.gpkg)

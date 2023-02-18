@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -227,7 +227,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-create-project" id="toc-sec-create-project" class="nav-link active" data-scroll-target="#sec-create-project"><span class="toc-section-number">6.1</span>  新建立專案</a></li>
+  <li><a href="#儲存專案" id="toc-儲存專案" class="nav-link" data-scroll-target="#儲存專案"><span class="toc-section-number">6.2</span>  儲存專案</a>
+  <ul class="collapse">
+  <li><a href="#範例一" id="toc-範例一" class="nav-link" data-scroll-target="#範例一"><span class="toc-section-number">6.2.1</span>  範例一、</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mutolisp/introGIS/edit/main/QGIS_projects.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/mutolisp/introGIS/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/mutolisp/introGIS/blob/main/QGIS_projects.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -249,8 +259,47 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>分析和處理空間資料時，往往都需要反覆的載入圖層、修改圖層內容與資料等， 若每次都要重頭來開啟圖層往往曠日費時。因此可善加使用 QGIS 的專案(project)功能， 相關工具列的功能說明可參考 <a href="useQGIS.html#sec-project_toolbar"><span>Section&nbsp;5.2.1.1</span></a> 及 <a href="vector_selection.html#fig-6-1">圖&nbsp;<span>8.1</span></a>。</p>
+<section id="sec-create-project" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-create-project"><span class="header-section-number">6.1</span> 新建立專案</h2>
+<p>開啟 QGIS 的時候，會是一個完全空白的專案，此時可以載入圖層或是操作。 當要再新建立一個專案，可按工具列的「新建專案」(<a href="vector_selection.html#fig-6-1">圖&nbsp;<span>8.1</span></a> 的 P1 ) 或是按快速鍵 Ctrl + N (windows) 或 Command + N (Mac OS)。</p>
+<div id="fig-6-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/QGIS_toolbar_1_projects.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;6.1: 專案工具列</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="儲存專案" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="儲存專案"><span class="header-section-number">6.2</span> 儲存專案</h2>
+<p>QGIS 儲存專案的時候(<a href="#fig-6-2">圖&nbsp;<span>6.2</span></a>)，可以選擇 .qgz 或是 .qgs 格式。這兩種的區別是前者為壓縮檔案， 後者則是平面文字的 xml 格式檔案。建議可以按照預設儲存成 .qgz 。</p>
+<div id="fig-6-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/QGIS_save_a_project.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;6.2: 儲存專案</figcaption><p></p>
+</figure>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>請注意：如果要和其他人分享的話，請記得將相關圖層置放在同一個目錄內， 整個壓縮起來分享。只傳.qgz 或.qgs 的檔案的話，其他檔案他人是無法讀到的。 另外一個就是將檔案都封裝儲存在 geopackage 內。</p>
+</div>
+</div>
+<p>當圖層檔案較多且比較複雜的話，建議可以把相關的向量圖層還有專案檔都放在 geopackage 內， 這樣可以便於後續操作。</p>
+<section id="範例一" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="範例一"><span class="header-section-number">6.2.1</span> 範例一、</h3>
+<p><a href="examples/projects/project_template.qgz">專案範例 qgz 檔</a>和範例檔中的<a href="examples/projects/project_template.gpkg">.gpkg 檔</a></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -268,18 +268,18 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="5.1" class="anchored" data-anchor-id="安裝-qgis"><span class="header-section-number">5.1</span> 安裝 QGIS</h2>
 <section id="下載-qgis" class="level3" data-number="5.1.1">
 <h3 data-number="5.1.1" class="anchored" data-anchor-id="下載-qgis"><span class="header-section-number">5.1.1</span> 下載 QGIS</h3>
-<p>請至 QGIS <a href="https://qgis.org">官方網頁</a><a href="https://qgis.org/zh-Hant/site/forusers/download.html">下載</a>。 網站會自動偵測你的作業系統，並提供下載的連結(<a href="#fig-3-1">Figure&nbsp;<span>5.1</span></a>)</p>
-<div id="fig-3-1" class="quarto-figure quarto-figure-center anchored">
+<p>請至 QGIS <a href="https://qgis.org">官方網頁</a><a href="https://qgis.org/zh-Hant/site/forusers/download.html">下載</a>。 網站會自動偵測你的作業系統，並提供下載的連結(<a href="#fig-5-1">圖&nbsp;<span>5.1</span></a>)</p>
+<div id="fig-5-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_download_page.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.1: QGIS 下載頁面</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.1: QGIS 下載頁面</figcaption><p></p>
 </figure>
 </div>
-<p>以 Windows 作業系統為例，當點選「立即下載」後，下載頁面會轉到 windows 專屬的下載頁面(<a href="#fig-3-2">Figure&nbsp;<span>5.2</span></a>)。 預設會下載獨立安裝的套件(standalone)，對於新手而言可以選這個最新的版本。 以 <a href="#fig-3-2">Figure&nbsp;<span>5.2</span></a> 為例，即 3.28 版，或是另外一個比較舊的長期維護釋出版(Long-Term Release, LTR)， 目前是 3.22-LTR。如果你有特別的安裝需求，像是需要安裝或不安裝特定的選項， 可以使用 OSGeo4W Network Installer 來透過網頁下載並安裝。</p>
-<div id="fig-3-2" class="quarto-figure quarto-figure-center anchored">
+<p>以 Windows 作業系統為例，當點選「立即下載」後，下載頁面會轉到 windows 專屬的下載頁面(<a href="#fig-5-2">圖&nbsp;<span>5.2</span></a>)。 預設會下載獨立安裝的套件(standalone)，對於新手而言可以選這個最新的版本。 以 <a href="#fig-5-2">圖&nbsp;<span>5.2</span></a> 為例，即 3.28 版，或是另外一個比較舊的長期維護釋出版(Long-Term Release, LTR)， 目前是 3.22-LTR。如果你有特別的安裝需求，像是需要安裝或不安裝特定的選項， 可以使用 OSGeo4W Network Installer 來透過網頁下載並安裝。</p>
+<div id="fig-5-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_download_windows.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.2: QGIS Windows 下載頁面</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.2: QGIS Windows 下載頁面</figcaption><p></p>
 </figure>
 </div>
 <div class="callout-note callout callout-style-default callout-captioned">
@@ -299,46 +299,46 @@ Note
 </section>
 <section id="qgis-圖形介面介紹" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="qgis-圖形介面介紹"><span class="header-section-number">5.2</span> QGIS 圖形介面介紹</h2>
-<p>QGIS 的預設介面可以分為四個部分：工具列(toolbars，<a href="#fig-3-3">Figure&nbsp;<span>5.3</span></a> 中的1)、繪圖區(canvas，即 <a href="#fig-3-3">Figure&nbsp;<span>5.3</span></a> 中的2)、 面板(panels，<a href="#fig-3-3">Figure&nbsp;<span>5.3</span></a> 1中的3、4和5)與狀態列(圖1中的6)。QGIS 使用 <a href="https://qt.io">Qt</a> 的圖形介面框架， 因此能夠將工具列和繪圖區任意移動排列，甚至變成浮動的子視窗。要開啟自定介面，包括啟用或關閉工具列、 面板等，只要在工具列上任一位置按滑鼠右鍵就能開啟設定選單(<a href="#fig-3-4">Figure&nbsp;<span>5.4</span></a>)。在選單中勾選要啟用或關閉的工具列或面板即可。 另外一個方式就是在選單中的檢視(view)點選工具列(toolbars)或面板(panels)中的選項。</p>
-<div id="fig-3-3" class="quarto-figure quarto-figure-center anchored">
+<p>QGIS 的預設介面可以分為四個部分：工具列(toolbars，<a href="#fig-5-3">圖&nbsp;<span>5.3</span></a> 中的1)、繪圖區(canvas，即 <a href="#fig-5-3">圖&nbsp;<span>5.3</span></a> 中的2)、 面板(panels，<a href="#fig-5-3">圖&nbsp;<span>5.3</span></a> 1中的3、4和5)與狀態列(圖1中的6)。QGIS 使用 <a href="https://qt.io">Qt</a> 的圖形介面框架， 因此能夠將工具列和繪圖區任意移動排列，甚至變成浮動的子視窗。要開啟自定介面，包括啟用或關閉工具列、 面板等，只要在工具列上任一位置按滑鼠右鍵就能開啟設定選單(<a href="#fig-5-4">圖&nbsp;<span>5.4</span></a>)。在選單中勾選要啟用或關閉的工具列或面板即可。 另外一個方式就是在選單中的檢視(view)點選工具列(toolbars)或面板(panels)中的選項。</p>
+<div id="fig-5-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_interface.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.3: QGIS 圖形介面概覽</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.3: QGIS 圖形介面概覽</figcaption><p></p>
 </figure>
 </div>
-<div id="fig-3-4" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_custom_interface.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.4: QGIS 開啟介面選項</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.4: QGIS 開啟介面選項</figcaption><p></p>
 </figure>
 </div>
-<div id="fig-3-5" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-5" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_interface_view.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.5: QGIS 選單中的檢視選項</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.5: QGIS 選單中的檢視選項</figcaption><p></p>
 </figure>
 </div>
 <section id="工具列toolbars" class="level3" data-number="5.2.1">
 <h3 data-number="5.2.1" class="anchored" data-anchor-id="工具列toolbars"><span class="header-section-number">5.2.1</span> 工具列(toolbars)</h3>
-<p>在 QGIS 中的工具列如 <a href="#fig-3-6">Figure&nbsp;<span>5.6</span></a> 所顯示。在最左方(水平排列下)或最上方(垂直排列下)會有個兩排的點， 我們可以稱為移動工作移動工具列的「把手」，你可以用滑鼠左鍵點這個部分拖曳到你想要的地方( 可參考 <a href="#fig-3-7">Figure&nbsp;<span>5.7</span></a>)。 另外若每個工具列圖示(icon)右方有個向下的箭頭，代表這個功能圖示有子項目， 點選箭頭後會將子項目選單開啟，此時就能直接選取子項目之功能圖示。 因工具列可能因為載入圖示項目較多而自動隱藏，若有自動隱藏的工具列功能圖示時， 在該工具列的右方會有「》」的圖示，按該圖示後就會把隱藏的功能圖示都顯示出來。</p>
-<div id="fig-3-6" class="quarto-figure quarto-figure-center anchored">
+<p>在 QGIS 中的工具列如 <a href="#fig-5-6">圖&nbsp;<span>5.6</span></a> 所顯示。在最左方(水平排列下)或最上方(垂直排列下)會有個兩排的點， 我們可以稱為移動工作移動工具列的「把手」，你可以用滑鼠左鍵點這個部分拖曳到你想要的地方( 可參考 <a href="#fig-5-7">圖&nbsp;<span>5.7</span></a>)。 另外若每個工具列圖示(icon)右方有個向下的箭頭，代表這個功能圖示有子項目， 點選箭頭後會將子項目選單開啟，此時就能直接選取子項目之功能圖示。 因工具列可能因為載入圖示項目較多而自動隱藏，若有自動隱藏的工具列功能圖示時， 在該工具列的右方會有「》」的圖示，按該圖示後就會把隱藏的功能圖示都顯示出來。</p>
+<div id="fig-5-6" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_0_overview.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.6: QGIS 工具列功能概覽</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.6: QGIS 工具列功能概覽</figcaption><p></p>
 </figure>
 </div>
 <div>
-<div id="fig-3-7" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-7" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_move_toolbar.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.7: QGIS 移動工具列位置</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.7: QGIS 移動工具列位置</figcaption><p></p>
 </figure>
 </div>
 </div>
-<p>QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功能，對於新手來說可能會難以切入， 因此我們把工具列整理於 <a href="#tbl-qgis_toolbars">Table&nbsp;<span>5.1</span></a> 中，並在後方詳細說明不同工具列所提供的功能和簡單範例。 如果不清楚圖示的功能是什麼，可以將滑鼠停留在圖示上方稍待半秒左右，QGIS 就會自動出現該圖示的功能說明和快速鍵。</p>
+<p>QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功能，對於新手來說可能會難以切入， 因此我們把工具列整理於 <a href="#tbl-qgis_toolbars">表&nbsp;<span>5.1</span></a> 中，並在後方詳細說明不同工具列所提供的功能和簡單範例。 如果不清楚圖示的功能是什麼，可以將滑鼠停留在圖示上方稍待半秒左右，QGIS 就會自動出現該圖示的功能說明和快速鍵。</p>
 <div id="tbl-qgis_toolbars" class="anchored">
 <table class="table">
-<caption>Table&nbsp;5.1: QGIS 工具列與其功能說明</caption>
+<caption>表&nbsp;5.1: QGIS 工具列與其功能說明</caption>
 <colgroup>
 <col style="width: 29%">
 <col style="width: 8%">
@@ -443,11 +443,11 @@ Note
 </div>
 <section id="sec-project_toolbar" class="level4" data-number="5.2.1.1">
 <h4 data-number="5.2.1.1" class="anchored" data-anchor-id="sec-project_toolbar"><span class="header-section-number">5.2.1.1</span> 專案工具列(projects)</h4>
-<p>專案工具列如圖 <a href="#fig-3-8">Figure&nbsp;<span>5.8</span></a> 所顯示，具有六個主要功能， 和建立與管理專案有關。詳細的說明請參見 <a href="QGIS_projects.html"><span>Chapter&nbsp;6</span></a> 章節。 以下將簡要介紹專案工具列的元件說明，請同時參考 <a href="#fig-3-8">Figure&nbsp;<span>5.8</span></a> 的編號來閱讀。</p>
-<div id="fig-3-8" class="quarto-figure quarto-figure-center anchored">
+<p>專案工具列如圖 <a href="#fig-5-8">圖&nbsp;<span>5.8</span></a> 所顯示，具有六個主要功能， 和建立與管理專案有關。詳細的說明請參見 <a href="QGIS_projects.html"><span>Chapter&nbsp;6</span></a> 章節。 以下將簡要介紹專案工具列的元件說明，請同時參考 <a href="#fig-5-8">圖&nbsp;<span>5.8</span></a> 的編號來閱讀。</p>
+<div id="fig-5-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_1_projects.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.8: 專案工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.8: 專案工具列</figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -461,10 +461,10 @@ Note
 </section>
 <section id="sec-map_navigation_toolbar" class="level4" data-number="5.2.1.2">
 <h4 data-number="5.2.1.2" class="anchored" data-anchor-id="sec-map_navigation_toolbar"><span class="header-section-number">5.2.1.2</span> 地圖導覽工具列(map navigation)</h4>
-<div id="fig-3-9" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_2_map_navigation.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.9: 地圖導覽工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.9: 地圖導覽工具列</figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -488,10 +488,10 @@ Note
 </section>
 <section id="sec-selection_toolbar" class="level4" data-number="5.2.1.3">
 <h4 data-number="5.2.1.3" class="anchored" data-anchor-id="sec-selection_toolbar"><span class="header-section-number">5.2.1.3</span> 選擇工具列(selection)</h4>
-<div id="fig-3-10" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-10" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_3_selection.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.10: 選擇工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.10: 選擇工具列</figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -515,138 +515,153 @@ Note
 </section>
 <section id="sec-data_source_toolbar" class="level4" data-number="5.2.1.4">
 <h4 data-number="5.2.1.4" class="anchored" data-anchor-id="sec-data_source_toolbar"><span class="header-section-number">5.2.1.4</span> 資料來源管理工具列(data source manager)</h4>
-<div id="fig-3-11" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-11" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_4_data_source_manager.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.11: 資料來源管理工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.11: 資料來源管理工具列</figcaption><p></p>
+</figure>
+</div>
+<p>QGIS 支援多種不同類型的檔案格式，包含向量、影像、文字等類型的 GIS 格式。 一般來說可直接從檔案總管(windows)、Finder (Mac OS) 或是內建的瀏覽器選擇檔案直接拉進「圖層面板(Layer Panel)」中。 也可以在「資料來源管理器(Data Source Manager, <a href="#fig-5-11">圖&nbsp;<span>5.11</span></a> 中的 D1)」中選擇特定類型載入。 以下是工具列中的元件簡要介紹：</p>
+<ul>
+<li>D1：資料來源管理器，點選之後會開啟一個新的視窗(<a href="#fig-5-11-2">圖&nbsp;<span>5.12</span></a>)</li>
+<li>D2: 新建 <a href="https://www.geopackage.org/">Geopackage</a> 格式的圖層（向量）</li>
+<li>D3: 新建 Shapefile 圖層（向量）</li>
+<li>D4: 新建臨時暫存圖層(New Scratch Layer，向量)，這個暫存圖層會先建立於記憶體中，QGIS 關閉後即會自動刪除</li>
+<li>D5: 新建網格圖層(New Mesh Layer，向量)</li>
+<li>D6: 新建虛擬圖層(New Virtual Layer)</li>
+</ul>
+<div id="fig-5-11-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/QGIS_datasource.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.12: 資料來源管理器</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-manage_maplayer_toolbar" class="level4" data-number="5.2.1.5">
 <h4 data-number="5.2.1.5" class="anchored" data-anchor-id="sec-manage_maplayer_toolbar"><span class="header-section-number">5.2.1.5</span> 圖層管理工具列(manage map layer)</h4>
-<div id="fig-3-12" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-12" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_5_manage_map_layer.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.12: 圖層管理工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.13: 圖層管理工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-digitizing_toolbar" class="level4" data-number="5.2.1.6">
 <h4 data-number="5.2.1.6" class="anchored" data-anchor-id="sec-digitizing_toolbar"><span class="header-section-number">5.2.1.6</span> 數位化工具列(digitizing)</h4>
-<div id="fig-3-13" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-13" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_6_digitizing.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.13: 數位化工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.14: 數位化工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-adv_digitizing_toolbar" class="level4" data-number="5.2.1.7">
 <h4 data-number="5.2.1.7" class="anchored" data-anchor-id="sec-adv_digitizing_toolbar"><span class="header-section-number">5.2.1.7</span> 進階數位化工具列(advanced digitizing)</h4>
-<div id="fig-3-14" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-14" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_7_advanced_digitizing.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.14: 進階數位化工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.15: 進階數位化工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-shape_digitizing_toolbar" class="level4" data-number="5.2.1.8">
 <h4 data-number="5.2.1.8" class="anchored" data-anchor-id="sec-shape_digitizing_toolbar"><span class="header-section-number">5.2.1.8</span> 幾何形狀數位化工具列(shape digitizing)</h4>
-<div id="fig-3-15" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-15" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_8_shape_digitizing.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.15: 幾何形狀數位化工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.16: 幾何形狀數位化工具列</figcaption><p></p>
 </figure>
 </div>
 <p>這個工具列能夠直接繪製圓形、矩形、多邊形等。</p>
 </section>
 <section id="sec-database_toolbar" class="level4" data-number="5.2.1.9">
 <h4 data-number="5.2.1.9" class="anchored" data-anchor-id="sec-database_toolbar"><span class="header-section-number">5.2.1.9</span> 資料庫(database)</h4>
-<div id="fig-3-16" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-16" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_9_database.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.16: 資料庫</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.17: 資料庫</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-attribute_toolbar" class="level4" data-number="5.2.1.10">
 <h4 data-number="5.2.1.10" class="anchored" data-anchor-id="sec-attribute_toolbar"><span class="header-section-number">5.2.1.10</span> 屬性資料表(attribute table)工具列</h4>
-<div id="fig-3-17" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-17" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_10_attribute.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.17: 屬性資料表</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.18: 屬性資料表</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-label_toolbar" class="level4" data-number="5.2.1.11">
 <h4 data-number="5.2.1.11" class="anchored" data-anchor-id="sec-label_toolbar"><span class="header-section-number">5.2.1.11</span> 標籤(label)工具列</h4>
-<div id="fig-3-18" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-18" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_11_label.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.18: 標籤工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.19: 標籤工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-annotation_toolbar" class="level4" data-number="5.2.1.12">
 <h4 data-number="5.2.1.12" class="anchored" data-anchor-id="sec-annotation_toolbar"><span class="header-section-number">5.2.1.12</span> 註記(annotation)工具列</h4>
-<div id="fig-3-19" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-19" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_12_annotation.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.19: 註記工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.20: 註記工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-snapping_toolbar" class="level4" data-number="5.2.1.13">
 <h4 data-number="5.2.1.13" class="anchored" data-anchor-id="sec-snapping_toolbar"><span class="header-section-number">5.2.1.13</span> 接合(snapping)工具列</h4>
-<div id="fig-3-20" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-20" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_toolbar_13_snapping.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.20: 接合工具列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.21: 接合工具列</figcaption><p></p>
 </figure>
 </div>
 </section>
 </section>
 <section id="面板panels" class="level3" data-number="5.2.2">
 <h3 data-number="5.2.2" class="anchored" data-anchor-id="面板panels"><span class="header-section-number">5.2.2</span> 面板(panels)</h3>
-<p>面板是 QGIS 的圖形化介面主要元素，通常是放在在 QGIS 視窗的左方或右方， 裡頭有方便存取的選單、工具列等元件(<a href="#fig-3-21">Figure&nbsp;<span>5.21</span></a>)。使用上可以用滑鼠拖拉的方式隨意收放在任一區域， 或是用浮動模式。若使用多個螢幕，也能把面板放在不同的螢幕上，以最大化繪圖區的視窗。</p>
-<div id="fig-3-21" class="quarto-figure quarto-figure-center anchored">
+<p>面板是 QGIS 的圖形化介面主要元素，通常是放在在 QGIS 視窗的左方或右方， 裡頭有方便存取的選單、工具列等元件(<a href="#fig-5-21">圖&nbsp;<span>5.22</span></a>)。使用上可以用滑鼠拖拉的方式隨意收放在任一區域， 或是用浮動模式。若使用多個螢幕，也能把面板放在不同的螢幕上，以最大化繪圖區的視窗。</p>
+<div id="fig-5-21" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_panel_types.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.21: 面板模式</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.22: 面板模式</figcaption><p></p>
 </figure>
 </div>
-<p>移動的面板的時候，可用滑鼠拖拉至目標位置，此時會出現灰色背景提示(<a href="#fig-3-22">Figure&nbsp;<span>5.22</span></a>)。 若要移動為頁籤模式，就將要移動的面板移到既有的面板上(<a href="#fig-3-23">Figure&nbsp;<span>5.24</span></a>)，此外頁籤也能夠 用滑鼠拖拉順序。</p>
+<p>移動的面板的時候，可用滑鼠拖拉至目標位置，此時會出現灰色背景提示(<a href="#fig-5-22">圖&nbsp;<span>5.23</span></a>)。 若要移動為頁籤模式，就將要移動的面板移到既有的面板上(<a href="#fig-5-23">圖&nbsp;<span>5.25</span></a>)，此外頁籤也能夠 用滑鼠拖拉順序。</p>
 <div>
-<div id="fig-3-22" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-22" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_move_and_dock_panel.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.22: 移動面板</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.23: 移動面板</figcaption><p></p>
 </figure>
 </div>
 </div>
 <div>
-<div id="fig-3-23" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-23" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_dock_panel_as_tab.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.23: 移動面板變成頁籤模式</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.24: 移動面板變成頁籤模式</figcaption><p></p>
 </figure>
 </div>
 </div>
 </section>
 <section id="狀態列" class="level3" data-number="5.2.3">
 <h3 data-number="5.2.3" class="anchored" data-anchor-id="狀態列"><span class="header-section-number">5.2.3</span> 狀態列</h3>
-<p>狀態列包含「快速搜尋工具」、「座標或範圍顯示區(coodinates)」、「比例尺(scale)」、 「縮放繪圖區(magnifier)」、「旋轉繪圖區(rotation)」、「座標參考系統」等(<a href="#fig-3-23">Figure&nbsp;<span>5.24</span></a>)。</p>
-<div id="fig-3-23" class="quarto-figure quarto-figure-center anchored">
+<p>狀態列包含「快速搜尋工具」、「座標或範圍顯示區(coodinates)」、「比例尺(scale)」、 「縮放繪圖區(magnifier)」、「旋轉繪圖區(rotation)」、「座標參考系統」等(<a href="#fig-5-23">圖&nbsp;<span>5.25</span></a>)。</p>
+<div id="fig-5-23" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_status_bar.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.24: 狀態列</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.25: 狀態列</figcaption><p></p>
 </figure>
 </div>
-<p>QGIS 的功能非常多，圖形介面也很複雜，通常要執行某個特定地理演算法時，會從選單或工具列來點選。 但若您一時找不到功能在哪裡時，可直接在快速搜尋工具(windows 快速鍵 ctrl + k；mac os 快速鍵 command + k) 中直接輸入您想要找的工具名稱關鍵字即可(<a href="#fig-3-24">Figure&nbsp;<span>5.25</span></a>)。舉例來說，如果我要執行向量的環域功能(buffer)， 可在此直接輸入 buffer 或是前幾個字就可以找到。</p>
+<p>QGIS 的功能非常多，圖形介面也很複雜，通常要執行某個特定地理演算法時，會從選單或工具列來點選。 但若您一時找不到功能在哪裡時，可直接在快速搜尋工具(windows 快速鍵 ctrl + k；mac os 快速鍵 command + k) 中直接輸入您想要找的工具名稱關鍵字即可(<a href="#fig-5-24">圖&nbsp;<span>5.26</span></a>)。舉例來說，如果我要執行向量的環域功能(buffer)， 可在此直接輸入 buffer 或是前幾個字就可以找到。</p>
 <div>
-<div id="fig-3-24" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-5-24" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/QGIS_type_to_locate.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.25: 快速搜尋工具</figcaption><p></p>
+<p></p><figcaption class="figure-caption">圖&nbsp;5.26: 快速搜尋工具</figcaption><p></p>
 </figure>
 </div>
 </div>

@@ -2,7 +2,7 @@
 tag: QGIS, ui, toolbars
 number-sections: true
 toc: true
-
+reference-section-title: 第
 ---
 # 介面與使用基礎 {#sec-qgis_basics}
 
@@ -11,18 +11,18 @@ toc: true
 ### 下載 QGIS
 
 請至 QGIS [官方網頁](https://qgis.org)[下載](https://qgis.org/zh-Hant/site/forusers/download.html)。
-網站會自動偵測你的作業系統，並提供下載的連結(@fig-3-1)
+網站會自動偵測你的作業系統，並提供下載的連結(@fig-5-1)
 
-![QGIS 下載頁面](images/QGIS_download_page.png){#fig-3-1}
+![QGIS 下載頁面](images/QGIS_download_page.png){#fig-5-1}
 
 
-以 Windows 作業系統為例，當點選「立即下載」後，下載頁面會轉到 windows 專屬的下載頁面(@fig-3-2)。
+以 Windows 作業系統為例，當點選「立即下載」後，下載頁面會轉到 windows 專屬的下載頁面(@fig-5-2)。
 預設會下載獨立安裝的套件(standalone)，對於新手而言可以選這個最新的版本。
-以 @fig-3-2 為例，即 3.28 版，或是另外一個比較舊的長期維護釋出版(Long-Term Release, LTR)，
+以 @fig-5-2 為例，即 3.28 版，或是另外一個比較舊的長期維護釋出版(Long-Term Release, LTR)，
 目前是 3.22-LTR。如果你有特別的安裝需求，像是需要安裝或不安裝特定的選項，
 可以使用 OSGeo4W Network Installer 來透過網頁下載並安裝。
 
-![QGIS Windows 下載頁面](images/QGIS_download_windows.png){#fig-3-2}
+![QGIS Windows 下載頁面](images/QGIS_download_windows.png){#fig-5-2}
 
 ::: {.callout-note}
 
@@ -33,38 +33,38 @@ toc: true
 
 ## QGIS 圖形介面介紹
 
-QGIS 的預設介面可以分為四個部分：工具列(toolbars，@fig-3-3 中的1)、繪圖區(canvas，即 @fig-3-3 中的2)、
-面板(panels，@fig-3-3 1中的3、4和5)與狀態列(圖1中的6)。QGIS 使用 [Qt](https://qt.io) 的圖形介面框架，
+QGIS 的預設介面可以分為四個部分：工具列(toolbars，@fig-5-3 中的1)、繪圖區(canvas，即 @fig-5-3 中的2)、
+面板(panels，@fig-5-3 1中的3、4和5)與狀態列(圖1中的6)。QGIS 使用 [Qt](https://qt.io) 的圖形介面框架，
 因此能夠將工具列和繪圖區任意移動排列，甚至變成浮動的子視窗。要開啟自定介面，包括啟用或關閉工具列、
-面板等，只要在工具列上任一位置按滑鼠右鍵就能開啟設定選單(@fig-3-4)。在選單中勾選要啟用或關閉的工具列或面板即可。
+面板等，只要在工具列上任一位置按滑鼠右鍵就能開啟設定選單(@fig-5-4)。在選單中勾選要啟用或關閉的工具列或面板即可。
 另外一個方式就是在選單中的檢視(view)點選工具列(toolbars)或面板(panels)中的選項。
 
-![QGIS 圖形介面概覽](images/QGIS_interface.png){#fig-3-3}
+![QGIS 圖形介面概覽](images/QGIS_interface.png){#fig-5-3}
 
-![QGIS 開啟介面選項](images/QGIS_custom_interface.png){#fig-3-4}
+![QGIS 開啟介面選項](images/QGIS_custom_interface.png){#fig-5-4}
 
-![QGIS 選單中的檢視選項](images/QGIS_interface_view.png){#fig-3-5}
+![QGIS 選單中的檢視選項](images/QGIS_interface_view.png){#fig-5-5}
 
 ### 工具列(toolbars)
 
-在 QGIS 中的工具列如 @fig-3-6 所顯示。在最左方(水平排列下)或最上方(垂直排列下)會有個兩排的點，
+在 QGIS 中的工具列如 @fig-5-6 所顯示。在最左方(水平排列下)或最上方(垂直排列下)會有個兩排的點，
 我們可以稱為移動工作移動工具列的「把手」，你可以用滑鼠左鍵點這個部分拖曳到你想要的地方(
-可參考 @fig-3-7 [動畫關係所以 pdf 格式不支援])。
+可參考 @fig-5-7 [動畫關係所以 pdf 格式不支援])。
 另外若每個工具列圖示(icon)右方有個向下的箭頭，代表這個功能圖示有子項目，
 點選箭頭後會將子項目選單開啟，此時就能直接選取子項目之功能圖示。
 因工具列可能因為載入圖示項目較多而自動隱藏，若有自動隱藏的工具列功能圖示時，
 在該工具列的右方會有「》」的圖示，按該圖示後就會把隱藏的功能圖示都顯示出來。
 
-![QGIS 工具列功能概覽](images/QGIS_toolbar_0_overview.png){#fig-3-6}
+![QGIS 工具列功能概覽](images/QGIS_toolbar_0_overview.png){#fig-5-6}
 
 ::: {.content-hidden when-format="pdf"}
 
-![QGIS 移動工具列位置](images/QGIS_move_toolbar.gif){#fig-3-7}
+![QGIS 移動工具列位置](images/QGIS_move_toolbar.gif){#fig-5-7}
 
 :::
 
 ::: {.content-hidden when-format="html" when-format="epub"}
-![QGIS 移動工具列位置](images/QGIS_move_toolbar.png){#fig-3-7}
+![QGIS 移動工具列位置](images/QGIS_move_toolbar.png){#fig-5-7}
 :::
 
 QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功能，對於新手來說可能會難以切入，
@@ -92,11 +92,11 @@ QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功
 
 #### 專案工具列(projects) {#sec-project_toolbar}
 
-專案工具列如圖 @fig-3-8 所顯示，具有六個主要功能，
+專案工具列如圖 @fig-5-8 所顯示，具有六個主要功能，
 和建立與管理專案有關。詳細的說明請參見 @sec-project-management 章節。
-以下將簡要介紹專案工具列的元件說明，請同時參考 @fig-3-8 的編號來閱讀。
+以下將簡要介紹專案工具列的元件說明，請同時參考 @fig-5-8 的編號來閱讀。
 
-![專案工具列](images/QGIS_toolbar_1_projects.png){#fig-3-8}
+![專案工具列](images/QGIS_toolbar_1_projects.png){#fig-5-8}
 
 - P1: 建立新專案(快速鍵 Ctrl + N 或 Command + N \[mac\])，建立新的 QGIS 專案
 - P2: 開啟專案(快速鍵 Ctrl + O 或 Command + O \[mac\])，開啟 QGIS 專案檔
@@ -107,7 +107,7 @@ QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功
 
 #### 地圖導覽工具列(map navigation){#sec-map_navigation_toolbar}
 
-![地圖導覽工具列](images/QGIS_toolbar_2_map_navigation.png){#fig-3-9}
+![地圖導覽工具列](images/QGIS_toolbar_2_map_navigation.png){#fig-5-9}
 
 - N1: 移動地圖位置(pan map)
 - N2: 移動地圖位置到所選擇的圖徵中，會將所選的圖徵置放到繪圖區的正中央
@@ -128,7 +128,7 @@ QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功
 
 #### 選擇工具列(selection){#sec-selection_toolbar}
 
-![選擇工具列](images/QGIS_toolbar_3_selection.png){#fig-3-10}
+![選擇工具列](images/QGIS_toolbar_3_selection.png){#fig-5-10}
 
 - S1: 選擇圖徵(select features)，可以用下列不同方式選擇
     - 點選(select features)
@@ -147,91 +147,107 @@ QGIS 發展到現在，功能十分豐富，每次更新都會加入許多新功
 
 #### 資料來源管理工具列(data source manager){#sec-data_source_toolbar}
 
- ![資料來源管理工具列](images/QGIS_toolbar_4_data_source_manager.png){#fig-3-11}
+ ![資料來源管理工具列](images/QGIS_toolbar_4_data_source_manager.png){#fig-5-11}
+
+QGIS 支援多種不同類型的檔案格式，包含向量、影像、文字等類型的 GIS 格式。
+一般來說可直接從檔案總管(windows)、Finder (Mac OS) 或是內建的瀏覽器選擇檔案直接拉進「圖層面板(Layer Panel)」中。
+也可以在「資料來源管理器(Data Source Manager, @fig-5-11 中的 D1)」中選擇特定類型載入。
+以下是工具列中的元件簡要介紹：
+
+- D1：資料來源管理器，點選之後會開啟一個新的視窗(@fig-5-11-2)
+- D2: 新建 [Geopackage](https://www.geopackage.org/) 格式的圖層（向量）
+- D3: 新建 Shapefile 圖層（向量）
+- D4: 新建臨時暫存圖層(New Scratch Layer，向量)，這個暫存圖層會先建立於記憶體中，QGIS 關閉後即會自動刪除
+- D5: 新建網格圖層(New Mesh Layer，向量)
+- D6: 新建虛擬圖層(New Virtual Layer)
+
+ ![資料來源管理器](images/QGIS_datasource.png){#fig-5-11-2}
+
+
 
 #### 圖層管理工具列(manage map layer){#sec-manage_maplayer_toolbar}
 
- ![圖層管理工具列](images/QGIS_toolbar_5_manage_map_layer.png){#fig-3-12}
+ ![圖層管理工具列](images/QGIS_toolbar_5_manage_map_layer.png){#fig-5-12}
 
 #### 數位化工具列(digitizing){#sec-digitizing_toolbar}
 
-![數位化工具列](images/QGIS_toolbar_6_digitizing.png){#fig-3-13}
+![數位化工具列](images/QGIS_toolbar_6_digitizing.png){#fig-5-13}
 
 #### 進階數位化工具列(advanced digitizing){#sec-adv_digitizing_toolbar}
 
-![進階數位化工具列](images/QGIS_toolbar_7_advanced_digitizing.png){#fig-3-14}
+![進階數位化工具列](images/QGIS_toolbar_7_advanced_digitizing.png){#fig-5-14}
 
 #### 幾何形狀數位化工具列(shape digitizing){#sec-shape_digitizing_toolbar}
 
-![幾何形狀數位化工具列](images/QGIS_toolbar_8_shape_digitizing.png){#fig-3-15}
+![幾何形狀數位化工具列](images/QGIS_toolbar_8_shape_digitizing.png){#fig-5-15}
 
 這個工具列能夠直接繪製圓形、矩形、多邊形等。
 
 #### 資料庫(database){#sec-database_toolbar}
 
-![資料庫](images/QGIS_toolbar_9_database.png){#fig-3-16}
+![資料庫](images/QGIS_toolbar_9_database.png){#fig-5-16}
 
 #### 屬性資料表(attribute table)工具列{#sec-attribute_toolbar}
 
-![屬性資料表](images/QGIS_toolbar_10_attribute.png){#fig-3-17}
+![屬性資料表](images/QGIS_toolbar_10_attribute.png){#fig-5-17}
 
 #### 標籤(label)工具列{#sec-label_toolbar}
 
-![標籤工具列](images/QGIS_toolbar_11_label.png){#fig-3-18}
+![標籤工具列](images/QGIS_toolbar_11_label.png){#fig-5-18}
 
 #### 註記(annotation)工具列{#sec-annotation_toolbar}
 
-![註記工具列](images/QGIS_toolbar_12_annotation.png){#fig-3-19}
+![註記工具列](images/QGIS_toolbar_12_annotation.png){#fig-5-19}
 
 #### 接合(snapping)工具列{#sec-snapping_toolbar}
 
-![接合工具列](images/QGIS_toolbar_13_snapping.png){#fig-3-20}
+![接合工具列](images/QGIS_toolbar_13_snapping.png){#fig-5-20}
 
 ### 面板(panels)
 
 面板是 QGIS 的圖形化介面主要元素，通常是放在在 QGIS 視窗的左方或右方，
-裡頭有方便存取的選單、工具列等元件(@fig-3-21)。使用上可以用滑鼠拖拉的方式隨意收放在任一區域，
+裡頭有方便存取的選單、工具列等元件(@fig-5-21)。使用上可以用滑鼠拖拉的方式隨意收放在任一區域，
 或是用浮動模式。若使用多個螢幕，也能把面板放在不同的螢幕上，以最大化繪圖區的視窗。
 
-![面板模式](images/QGIS_panel_types.png){#fig-3-21}
+![面板模式](images/QGIS_panel_types.png){#fig-5-21}
 
-移動的面板的時候，可用滑鼠拖拉至目標位置，此時會出現灰色背景提示(@fig-3-22)。
-若要移動為頁籤模式，就將要移動的面板移到既有的面板上(@fig-3-23)，此外頁籤也能夠
+移動的面板的時候，可用滑鼠拖拉至目標位置，此時會出現灰色背景提示(@fig-5-22)。
+若要移動為頁籤模式，就將要移動的面板移到既有的面板上(@fig-5-23)，此外頁籤也能夠
 用滑鼠拖拉順序。
 
 ::: {.content-hidden when-format="pdf"}
-![移動面板](images/QGIS_move_and_dock_panel.gif){#fig-3-22}
+![移動面板](images/QGIS_move_and_dock_panel.gif){#fig-5-22}
 :::
 
 ::: {.content-hidden when-format="html" when-format="epub"}
-![移動面板](images/QGIS_move_and_dock_panel.png){#fig-3-22}
+![移動面板](images/QGIS_move_and_dock_panel.png){#fig-5-22}
 :::
 
 ::: {.content-hidden when-format="pdf"}
-![移動面板變成頁籤模式](images/QGIS_dock_panel_as_tab.gif){#fig-3-23}
+![移動面板變成頁籤模式](images/QGIS_dock_panel_as_tab.gif){#fig-5-23}
 :::
 
 ::: {.content-hidden when-format="html" when-format="epub"}
-![移動面板變成頁籤模式](images/QGIS_dock_panel_as_tab.png){#fig-3-23}
+![移動面板變成頁籤模式](images/QGIS_dock_panel_as_tab.png){#fig-5-23}
 :::
 
 ### 狀態列
 
 狀態列包含「快速搜尋工具」、「座標或範圍顯示區(coodinates)」、「比例尺(scale)」、
-「縮放繪圖區(magnifier)」、「旋轉繪圖區(rotation)」、「座標參考系統」等(@fig-3-23)。
+「縮放繪圖區(magnifier)」、「旋轉繪圖區(rotation)」、「座標參考系統」等(@fig-5-23)。
 
-![狀態列](images/QGIS_status_bar.png){#fig-3-23}
+![狀態列](images/QGIS_status_bar.png){#fig-5-23}
 
 QGIS 的功能非常多，圖形介面也很複雜，通常要執行某個特定地理演算法時，會從選單或工具列來點選。
 但若您一時找不到功能在哪裡時，可直接在快速搜尋工具(windows 快速鍵 ctrl + k；mac os 快速鍵 command + k)
-中直接輸入您想要找的工具名稱關鍵字即可(@fig-3-24)。舉例來說，如果我要執行向量的環域功能(buffer)，
+中直接輸入您想要找的工具名稱關鍵字即可(@fig-5-24)。舉例來說，如果我要執行向量的環域功能(buffer)，
 可在此直接輸入 buffer 或是前幾個字就可以找到。
 
 ::: {.content-hidden when-format="pdf"}
-![快速搜尋工具](images/QGIS_type_to_locate.gif){#fig-3-24}
+![快速搜尋工具](images/QGIS_type_to_locate.gif){#fig-5-24}
 :::
 
 ::: {.content-hidden when-format="html" when-format="epub"}
-![快速搜尋工具](images/QGIS_type_to_locate.png){#fig-3-24}
+![快速搜尋工具](images/QGIS_type_to_locate.png){#fig-5-24}
 :::
 

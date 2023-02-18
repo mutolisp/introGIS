@@ -46,6 +46,11 @@ format:
     fig-responsive: true
     citations-hover: true
     comment-hover: true
+    crossref:
+      fig-title: 圖
+      tbl-title: 表
+      fig-prefix: 圖
+      tbl-prefix: 表
   pdf:
     header-includes:
       - \usepackage{fontspec} # 使用 fontspec package
